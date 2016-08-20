@@ -1,21 +1,5 @@
-# personal-blog
+# My Personal Blog
 
-generated using Luminus version "2.9.10.90"
+Created with Clojure & Luminus.
 
-FIXME
-
-## Prerequisites
-
-You will need [Leiningen][1] 2.0 or above installed.
-
-[1]: https://github.com/technomancy/leiningen
-
-## Running
-
-To start a web server for the application, run:
-
-    lein run
-
-## License
-
-Copyright © 2016 FIXME
+Check me out @ https://murmuring-waters-87350.herokuapp.com
