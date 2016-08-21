@@ -8,7 +8,8 @@
                         "&ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory")})
 
 (defonce parsed-db
-  (let [db-url (env :heroku-database-url)
+  (let [db-url (or (env :heroku-database-url)
+                   "")
         splitted-url (str/split db-url #":")
         host-field (str/split (nth splitted-url 2) #"@")
         port-field (str/split (nth splitted-url 3) #"/")
