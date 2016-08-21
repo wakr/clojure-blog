@@ -9,7 +9,7 @@
 
 (defonce parsed-db
   (let [db-url (or (env :heroku-database-url)
-                   "")
+                   (env :database-url))
         splitted-url (str/split db-url #":")
         host-field (str/split (nth splitted-url 2) #"@")
         port-field (str/split (nth splitted-url 3) #"/")
