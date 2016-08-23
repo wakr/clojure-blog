@@ -1,1 +1,1 @@
-CREATE TABLE IF NOT EXISTS blog_posts (id BIGINT);
+CREATE TABLE IF NOT EXISTS blog_posts (id SERIAL);

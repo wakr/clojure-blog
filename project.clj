@@ -20,7 +20,11 @@
                  [ring/ring-defaults "0.2.1"]
                  [mount "0.1.10"]
                  [migratus "0.8.28"]
-                 [org.slf4j/slf4j-log4j12 "1.7.9"]
+                 [org.slf4j/slf4j-log4j12 "1.7.9"
+                                 :exclusions [javax.mail/mail
+                                              javax.jms/jms
+                                              com.sun.jdmk/jmxtools
+                                              com.sun.jmx/jmxri]]
                  [environ "1.1.0"]
                  [cprop "0.1.8"]
                  [org.clojure/tools.cli "0.3.5"]
